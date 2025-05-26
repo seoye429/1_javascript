@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>2_날짜</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+<pre>
+    시간에 관련되어있는 3가지 종류
+    - ISO DATE : 국제표준시 "2025-05-12" [YYYY-MM-DDTHH:MM:SSZ]
+    - Short Date : 짧은 날짜 "05/12/2025" 
+    - Long Date : May 12 2025
+</pre>
+                <h1 class="my-3">간단한 시간 나오게 하기</h1> <!--16px * 3-->
+                <button class="btn btn-outline-warning"
+                onclick="document.getElementById('time').innerHTML = Date()"
+                >
+                누르면 시간이 나와요
+                <!--document에서 time이라는 아이디를 찾아서 거기에 데이트 객체 넣어주세요-->
+                </button>
+                <p id="time"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

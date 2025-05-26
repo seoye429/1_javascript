@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>6_event</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+<!--------------------------------------------------------------------------->
+<h1>HTML 이벤트</h1>
+<img src="img/dora.png" alt="" width="40" height="40"
+onmouseover="bigDora(this)"
+onmouseout="smallDora(this)"
+>
+
+<pre>
+기본크기 40,40
+커지는 함수명 bigDora
+작아지는 함수명 smallDora
+커지는 크기는= 100*100
+</pre>
+
+
+
+<!--------------------------------------------------------------------------->
+<img src="img/smiley.gif" alt="" width="32" height="32" 
+onmouseover="bigImg(this)"
+onmouseout="normalImg(this)"
+> <!--this는 플루언트(fluent)-->
+<script src="js/img.js"></script>
+
+
+<!--------------------------------------------------------------------------->
+<br>
+<br>
+<br>
+<pre>
+-onchange: HTML 요소가 변경될때
+-onclick: 사용자가 html 엘리먼트 클릭할때
+-onmouseover: 사용자가 html 요소위로 마우스를 이동하는것,
+-onmouseout: 사용자가 html 요소에서 마우스를 멀리 이동함
+-onkeydown: 사용자가 키보드에 키를 누르는것
+-onload: 브라우저가 페이지 로딩을 완료하는것
+</pre>
+<br>
+<br>
+<br>
+<!--------------------------------------------------------------------------->
+<div class="" id="view"></div>
+<button onclick="document.getElementById('view').innerHTML=Date()"> <!--Date()시간개체를 넣는다-->
+    what time is it now?
+</button>
+
+<!--------------------------------------------------------------------------->
+
+<br>
+<br>
+<br>
+
+<pre>
+HTML 이벤트는 브라우저가 수행하는 일이거나 사용자가 수행하는 일일수 있다,
+-페이지 로딩이 되였습니다
+-입력필드가 변경 되였습니다
+-버튼이 클릭되였습니다
+
+</pre>
+<!--------------------------------------------------------------------------->
+            </div>
+        </div>
+    </div>
+</body>
+</html>  
+

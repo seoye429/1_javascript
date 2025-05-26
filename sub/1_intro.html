@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>javascript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+<pre>
+1) 도큐먼트에서 찾기
+2) 버튼으로 함수 실행
+- 예약어는 변수나 함수명으로 사용할 수 없다
+3) Variables => var 많은 수 여서 변수 변하는 수여서 변수
+</pre>
+        <h1>3) 변수</h1>
+        - es6가 나오기 전에 var를 사용함 문제는 재할당이 된다<br>
+        <script>
+        x = 5; x=3; //똑같은 변수인데 값이 달라짐
+        //상수는 참조만 한다
+        y = 6; y=9;
+        z = x+y;
+        let q = 10; let w = 15;
+        let plus = q + w
+        document.write("<br>"+plus+"<br>")
+        document.write("<br>"+ z +"<br>")
+        document.write("<br>"+z+"<br>")
+
+        const piCircle = 3.14;
+        document.writeln(piCircle);
+        document.writeln("문자열"+"<br>"+3)
+        </script>
+        <p>그래서 es6에서 let과 const가 나옴</p>
+
+        <h1>2) </h1>
+        
+        <p class="text-success h1" id="textFind"></p>
+        <button onclick="inText()" class="btn btn-outline-success">함수실행</button>
+        <script>
+            function inText(){
+            document.getElementById("textFind").innerHTML='저는 버튼을 클릭하면 제가 들어갑니다';
+            }   
+
+        </script>
+        <h1>1) 도큐먼트에서 찾기</h1>
+        <div class="text-danger" id="find"></div>
+        <!--
+        dom = 도큐먼트 오브젝트 모델
+        bom = 브라우저 오브젝트 모델(dom이 웹에서 열리면 bom이됨)
+        -->
+        <script>
+            document.getElementById('find').innerHTML = "점심 15분 전"
+        </script>            
+                <h1 class="my-5">함수</h1>    
+                <a href="#" class="a-link" onclick="goUrl()">
+                저를 눌러보아요
+                </a>            
+                <script>
+                    goUrl = () => {//함수는 호출할때만 실행되는 코드블럭
+                location.href="https://youtube.com"
+                    }
+                //alert("저는 팝업창 입니다")   
+                </script>                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

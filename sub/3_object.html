@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>class와 object</h1>
+<p><mark id="sam"></mark></p>
+<p><mark id="phoneFind"></mark></p>
+<p id="carFind"></p>
+<script>
+const apple = {type:"iphone", model:"16ProMax", color:"블랙 티타늄"}
+document.getElementById("phoneFind").innerHTML =
+"내 전화기는 " + apple.type + " 이고 모델은 " + apple.model + " 이고 " + apple.color + "입니다";
+
+const 갤럭시 = {type:"sam", model:"갤럭시26", color:"블랙"}
+document.getElementById("sam").innerHTML =
+"내 스마트폰은 " + 갤럭시.type + " 이고 모델은 " + 갤럭시.model + " 이고 " + 갤럭시.color + "색 입니다";
+
+
+
+//객체만들기 const:상수 car는 상수명이고 커맨드라함
+const car = {type:"mercedes", model:"cls450",color:"white"};
+
+document.getElementById("carFind").innerHTML = "내 차는" + car.type + "이며 색상은" + car.color + "입니다"; 
+</script>
+<pre>
+- 클래스는 객체를 만들기 위한 탬플릿이다
+- 객체는 사물(object)
+- Car => Properties[car.name = x6, car.weight = 1t] 
+=> Methods [car.start(), car.break()]
+- 객체지향으로 프로그래밍을 하면 사용이 편리하다
+</pre>
+</body>
+</html>
